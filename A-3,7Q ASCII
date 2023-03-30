@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int sum = 0, i;
+    printf("Enter a string: ");
+    scanf("%[^\n]s", str); // Read the string until newline character
+    
+    for (i = 0; str[i] != '\0'; i++) {
+        sum += (int)str[i]; // Add ASCII value of each character to the sum
+    }
+    
+    printf("Sum of ASCII values of all characters in the string: %d\n", sum);
+    return 0;
+}
